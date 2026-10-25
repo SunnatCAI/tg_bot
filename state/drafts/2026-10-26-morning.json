@@ -1,0 +1,123 @@
+{
+  "id": "2026-10-26-morning",
+  "slot": "morning",
+  "post": {
+    "topic": "php2shell-critical-php-rce",
+    "palette": "alert_red",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "PHP2Shell",
+        "title": "PHP serverlari xavf ostida",
+        "accent": "PHP",
+        "body": "PHP-dagi ikki kritik zaiflik login talab qilmay serverda kod bajarishga yoʻl ochishi mumkin. Yamoqlar chiqarildi."
+      },
+      {
+        "layout": "points",
+        "kicker": "Nima yuz berdi?",
+        "title": "Ikki kritik zaiflik",
+        "accent": "kritik",
+        "points": [
+          {
+            "title": "CVE-2026-109618",
+            "text": "Xotira yetishmasligi (OOM) holati notoʻgʻri ishlanib, RCE ga olib kelishi mumkin"
+          },
+          {
+            "title": "CVE-2026-109619",
+            "text": "Soʻrovga oid holat xotira boʻshatilgach ham qolib, RCE ga yoʻl ochadi"
+          },
+          {
+            "title": "Hujumlar boshlangan",
+            "text": "Cloudflare millionlab urinishni qayd etdi; bitta Yevropa davlat tashkiloti buzib kirilgan"
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "Versiyalar",
+        "title": "Qaysi versiya xavfsiz?",
+        "accent": "xavfsiz",
+        "points": [
+          {
+            "title": "PHP 8.5",
+            "text": "8.5.12 va undan yuqori"
+          },
+          {
+            "title": "PHP 8.4",
+            "text": "8.4.27 va undan yuqori"
+          },
+          {
+            "title": "PHP 8.3/8.2",
+            "text": "8.3.36 yoki 8.2.35 va undan yuqori"
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Tekshiruv",
+        "title": "Versiyangizni tekshiring",
+        "accent": "Versiyangizni",
+        "body": "Serverda oʻrnatilgan PHP versiyasini koʻring. Buyruqlar xavfsiz: ular faqat oʻqish amalini bajaradi.",
+        "code": "php -v\nphp-fpm -v\ndpkg -l | grep -i php\n# Veb PHP si CLI dan farq qilishi mumkin"
+      },
+      {
+        "layout": "points",
+        "kicker": "Nima qilish kerak?",
+        "title": "Bugunoq yangilang",
+        "accent": "yangilang",
+        "points": [
+          {
+            "title": "Yangilang va restart qiling",
+            "text": "Avval internetga ochiq tizimlarni yangilang; soʻng PHP-FPM yoki veb-serverni restart qiling"
+          },
+          {
+            "title": "Eski PHP versiyalari",
+            "text": "Rasmiy reliz yoʻq boʻlsa: vendor paketi, minimal backport yoki yangi branchga oʻting"
+          },
+          {
+            "title": "Yamoq boʻlmasa, oflayn",
+            "text": "NSA va CISA: zudlik bilan yangilab boʻlmasa, tizimni oflayn qiling"
+          },
+          {
+            "title": "WAF yetarli emas",
+            "text": "WAF yordam beradi, lekin yamoqning oʻrnini bosmaydi"
+          }
+        ]
+      }
+    ],
+    "caption": "🚨 <b>PHP2Shell: PHP serverlaringizni tekshiring</b>\n\nPHP loyihasi 21-oktyabrda ikki kritik zaiflik (CVE-2026-109618 va CVE-2026-109619) uchun yamoq chiqardi. NSA maʼlumotiga koʻra, ular login talab qilmay veb-serverni egallashga imkon berishi mumkin. Cloudflare rahbari millionlab urinishlarni koʻrganini aytgan, Unit 42 esa bitta Yevropa davlat tashkiloti buzilganini yozgan.\n\n<blockquote>Yangilang: 8.5.12, 8.4.27, 8.3.36 yoki 8.2.35. Imkoni boʻlmasa, tizimni oflayn qiling.</blockquote>\n\nVersiyani <code>php -v</code> bilan tekshiring. Veb-server ishlatadigan PHP boshqacha boʻlishi mumkin. Batafsil: <a href=\"https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/\">Help Net Security</a>.",
+    "sources": [
+      {
+        "name": "Help Net Security",
+        "url": "https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/"
+      },
+      {
+        "name": "NSA Advisory",
+        "url": "https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4630238/nsa-advisory-critical-patches-recommended-for-php-vulnerabilities/"
+      },
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
+      },
+      {
+        "name": "SecurityWeek",
+        "url": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/amp/"
+      },
+      {
+        "name": "watchTowr FAQ",
+        "url": "https://watchtowr.com/intelligence/php-cve-2026-109618-faq/"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": true,
+  "file_ids": [
+    "AgACAgIAAxUHat5o80lCgZWoNfBMzceAm4pwz4MAAh0eaxuNgPhKErKDDacbPZ0BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHat5o82ghHjr6PsCzNnfW7lHeHqoAAh4eaxuNgPhKpvZBr-1Uk7UBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHat5o80UoqwOK3jAhxdIjcT82J2gAAh8eaxuNgPhKipnaWJ9CItgBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHat5o80mJzIX1lrGvboNf7R52eMcAAhseaxuNgPhKwua-o8wu2DwBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHat5o8zbZwyJVPv3dajW75pGXHRkAAhweaxuNgPhKX37UchjLyMcBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 16
+}
