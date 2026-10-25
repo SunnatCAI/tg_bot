@@ -1,0 +1,75 @@
+name: kanal
+
+on:
+  schedule:
+    # UTC vaqtlari. Toshkent = UTC+5.
+    - cron: "15 1 * * *"   # 06:15 ertalabki qoralama
+    - cron: "57 2 * * *"   # ~08:00 ertalabki post
+    - cron: "15 5 * * *"   # 10:15 kunduzgi qoralama
+    - cron: "57 6 * * *"   # ~12:00 kunduzgi post
+    - cron: "15 11 * * *"  # 16:15 kechki qoralama
+    - cron: "57 12 * * *"  # ~18:00 kechki post + so'rovnoma
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Qaysi post"
+        type: choice
+        options: [morning, noon, evening]
+        default: morning
+      stage:
+        description: "Bosqich"
+        type: choice
+        options: [draft, publish, whoami]
+        default: draft
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kanal
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Kutubxonalar
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-inter fonts-jetbrains-mono || true
+          python -m playwright install --with-deps chromium
+
+      - name: Ishga tushirish
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
+          APPROVAL: ${{ vars.APPROVAL || '1' }}
+          CHANNEL_LABEL: ${{ vars.CHANNEL_LABEL }}
+          WRITER_MODEL: ${{ vars.WRITER_MODEL }}
+          CHECKER_MODEL: ${{ vars.CHECKER_MODEL }}
+        run: >
+          python -m bot.main run
+          --schedule "${{ github.event.schedule }}"
+          --slot "${{ inputs.slot }}"
+          --stage "${{ inputs.stage }}"
+
+      # Holat (qoralamalar, mavzular tarixi) repoga saqlanadi. Bu kunlik commit
+      # repoda faollik ham hosil qiladi, shuning uchun GitHub jadvalni o'chirib qo'ymaydi.
+      - name: Holatni saqlash
+        if: always()
+        run: |
+          git config user.name "kanal-bot"
+          git config user.email "kanal-bot@users.noreply.github.com"
+          git add state
+          git diff --cached --quiet || (git commit -m "state: ${{ github.event.schedule || inputs.stage }}" && git push)

@@ -1,0 +1,26 @@
+{
+  "topic": "claude-code-security-review",
+  "palette": "claude_orange",
+  "brand_mark": "claude",
+  "slides": [
+    {"layout": "hero", "kicker": "Claude", "title": "Kodni yozishdan oldin tekshiring", "accent": "tekshiring",
+     "body": "AI yozgan kod ham xato qiladi. Uni ishga tushirishdan oldin xavfsizlik nuqtai nazaridan koʻrib chiqish kerak."},
+    {"layout": "points", "kicker": "Nima qaraladi", "title": "Uchta asosiy xavf", "accent": "xavf",
+     "points": [
+       {"title": "Maxfiy kalitlar.", "text": "Token yoki parol kodga yozib qoʻyilmaganmi?"},
+       {"title": "Kiruvchi maʼlumot.", "text": "Foydalanuvchi kiritgan matn tekshirilyaptimi?"},
+       {"title": "Bogʻliqliklar.", "text": "Kutubxonalar eskirgan yoki zaif emasmi?"}
+     ]},
+    {"layout": "code", "kicker": "Amaliyot", "title": "Bir buyruq bilan tekshiruv", "accent": "buyruq",
+     "body": "Python loyihangizdagi zaif kutubxonalarni toping:",
+     "code": "pip install pip-audit\npip-audit -r requirements.txt"},
+    {"layout": "cards", "kicker": "Xulosa", "title": "Nima qilish kerak?", "accent": "qilish",
+     "points": [
+       {"title": "Oʻqing", "text": "AI kodini qatorma-qator koʻrib chiqing."},
+       {"title": "Sinang", "text": "Test yozing va xatolarni qidiring."},
+       {"title": "Yangilang", "text": "Kutubxonalarni muntazam yangilab turing."}
+     ]}
+  ],
+  "caption": "🛡 AI yordamida kod yozish tezlashdi, lekin xavfsizlik masʼuliyati hali ham sizda.\n\n<blockquote>AI yozgan kod ham koʻrib chiqilishi shart.</blockquote>\n\nZaif kutubxonalarni tekshirish uchun <code>pip-audit</code> ishlating. Batafsil: <a href=\"https://pypi.org/project/pip-audit/\">pip-audit</a>",
+  "sources": [{"name": "pip-audit", "url": "https://pypi.org/project/pip-audit/"}]
+}
