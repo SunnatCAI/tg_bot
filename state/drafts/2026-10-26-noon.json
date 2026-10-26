@@ -1,0 +1,119 @@
+{
+  "id": "2026-10-26-noon",
+  "slot": "noon",
+  "post": {
+    "topic": "pip-audit-python-dependency-check",
+    "palette": "code_teal",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Kunduzgi qoʻllanma",
+        "title": "Python paketlaringizni tekshiring",
+        "accent": "tekshiring",
+        "body": "Loyihangizdagi kutubxonalarda maʼlum zaiflik bormi? Buni bir daqiqada bilib olish mumkin."
+      },
+      {
+        "layout": "points",
+        "kicker": "pip-audit nima",
+        "title": "Bu vosita nima qiladi?",
+        "accent": "vosita",
+        "points": [
+          {
+            "title": "Maʼlum zaifliklar",
+            "text": "Paketlaringizni PyPI va OSV zaiflik maʼlumotlari bilan solishtiradi."
+          },
+          {
+            "title": "Yashirin paketlar",
+            "text": "requirements.txt faylida yozmagan, lekin oʻrnatiladigan paketlar ham tekshiriladi."
+          },
+          {
+            "title": "Ochiq manbali",
+            "text": "PyPA ostida qoʻllab-quvvatlanadi, bepul foydalanish mumkin."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Amaliyot",
+        "title": "Uch buyruq yetarli",
+        "accent": "buyruq",
+        "body": "Virtual muhitda oʻrnating va requirements.txt faylingizni tekshiring.",
+        "code": "python -m pip install pip-audit\npip-audit -r requirements.txt\npip-audit -r requirements.txt --fix --dry-run"
+      },
+      {
+        "layout": "cards",
+        "kicker": "Natija",
+        "title": "Natijani oʻqing",
+        "accent": "oʻqing",
+        "points": [
+          {
+            "title": "Paket",
+            "text": "Zaifligi topilgan paket va uning versiyasi."
+          },
+          {
+            "title": "ID",
+            "text": "Zaiflik raqami, masalan PYSEC yoki CVE."
+          },
+          {
+            "title": "Fix versiya",
+            "text": "Xato tuzatilgan versiya. Boʻlmasa, xavfni qoʻlda baholang."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Xulosa",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "points": [
+          {
+            "title": "Avval --dry-run",
+            "text": "--fix versiyalarni oʻzgartiradi. Avval nima oʻzgarishini koʻring."
+          },
+          {
+            "title": "Exit code",
+            "text": "Zaiflik topilsa, buyruq nolga teng boʻlmagan kod qaytaradi. CI uchun qulay."
+          },
+          {
+            "title": "Versiyalarni qotiring",
+            "text": "Production muhitida pip install --require-hashes ishlating."
+          },
+          {
+            "title": "Muntazam tekshiring",
+            "text": "Yangi paket qoʻshganda va har hafta skanerni qayta ishga tushiring."
+          }
+        ]
+      }
+    ],
+    "caption": "🛡 <b>Python loyihangizdagi paketlar xavfsizmi?</b>\n\nBugungi kichik dars: <a href=\"https://github.com/pypa/pip-audit\">pip-audit</a> paketlaringizni maʼlum zaifliklar bazasi bilan solishtiradi. U requirements faylida yozmagan, lekin oʻrnatiladigan paketlarni ham tekshiradi.\n\n<blockquote>Boshlash uchun: <code>pip-audit -r requirements.txt</code></blockquote>\n\nAvtomatik tuzatishdan oldin <code>--fix --dry-run</code> bilan nima oʻzgarishini koʻring. Batafsil qadamlar karuselda.",
+    "sources": [
+      {
+        "name": "pypa/pip-audit (GitHub)",
+        "url": "https://github.com/pypa/pip-audit"
+      },
+      {
+        "name": "Snyk Advisor: pip-audit 2.10.1",
+        "url": "https://snyk.io/advisor/python/pip-audit"
+      },
+      {
+        "name": "pip-audit: the honest review",
+        "url": "https://lifehacker.dev/tools/pip-audit-honest-review/"
+      },
+      {
+        "name": "Python Dependency Security 2026: pip-audit and PyPI Guide",
+        "url": "https://www.decryptiondigest.com/blog/python-pip-dependency-security-pypi-audit-guide"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHat85bXd5bTh5gO7zJloIasMHNhgAAiUgaxuNgAABSxJmy16zUaolAQADAgADeQADPQQ",
+    "AgACAgIAAxUHat85bStw1z4I1CDC70pvyk7TPTwAAikgaxuNgAABS2D_0jFNnnaRAQADAgADeQADPQQ",
+    "AgACAgIAAxUHat85bfIpdjnibsz1N7c9F3aUORkAAicgaxuNgAABS91JSrf8XG1uAQADAgADeQADPQQ",
+    "AgACAgIAAxUHat85bSJod1SlFIfb6EX5sDq1I1YAAiYgaxuNgAABSzT9e_AtGBmaAQADAgADeQADPQQ",
+    "AgACAgIAAxUHat85bQ-n6fgIskU0mlSLvFcDo-sAAiggaxuNgAABS-TqKbHBchwzAQADAgADeQADPQQ"
+  ],
+  "control_message_id": 28
+}
