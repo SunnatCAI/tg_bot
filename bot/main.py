@@ -89,6 +89,13 @@ def approval_text(slot: str, post: dict, status: str = "", auto: bool = False) -
 
 def cmd_draft(cfg, tg: TG, slot: str, generate=content.generate) -> dict:
     draft_id = f"{today()}-{slot}"
+    # A late GitHub schedule can start this job after the admin has already
+    # approved the draft. Overwriting it would orphan that approval, so never
+    # regenerate a slot that already exists. To redo a slot, delete its file.
+    existing = load_json(DRAFTS / f"{draft_id}.json", None)
+    if existing:
+        print(f"Qoralama allaqachon bor ({existing.get('status')}), qayta yaratilmadi: {draft_id}")
+        return existing
     history = load_json(HISTORY, [])
     post = generate(cfg, slot, [h["topic"] for h in history[-30:]], available_marks(), today())
     seed = zlib.crc32(draft_id.encode())
