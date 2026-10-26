@@ -1,0 +1,127 @@
+{
+  "id": "2026-10-26-evening",
+  "slot": "evening",
+  "post": {
+    "topic": "ai-found-php2shell-defenders-vs-attackers",
+    "palette": "alert_red",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Kechki muhokama",
+        "title": "AI topdi, kim yutadi?",
+        "accent": "AI",
+        "body": "PHP2Shell: ikki jiddiy zaiflikni AI yordamida topishdi. Bu himoyachilar gʻalabasimi yoki hujumchilarga yoʻl ochdimi?"
+      },
+      {
+        "layout": "points",
+        "kicker": "Faktlar",
+        "title": "Nima sodir boʻldi?",
+        "accent": "Nima",
+        "points": [
+          {
+            "title": "Ikki zaiflik",
+            "text": "PHP2Shell: CVE-2026-109618 va CVE-2026-109619, CVSS 9.2."
+          },
+          {
+            "title": "AI yordamida topildi",
+            "text": "Calif (GPT-5.6 Sol) va Wiz mustaqil topishdi. Yamoqlar 21-oktabrda chiqdi."
+          },
+          {
+            "title": "Urinishlar davom etmoqda",
+            "text": "Honeypotda RCE tasdiqlandi. Unit 42 oʻz Yevropa daʼvosini qaytarib oldi."
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "1-pozitsiya",
+        "title": "Himoyachilar ustun",
+        "accent": "Himoyachilar",
+        "points": [
+          {
+            "title": "Oldinroq topildi",
+            "text": "OpenAI: zaiflik keng hujumlardan oldin topilgan, yamoq uchun vaqt boʻlgan."
+          },
+          {
+            "title": "Tezlik",
+            "text": "Bir holatda oylar talab qilgan tahlil bir haftada tugagan."
+          },
+          {
+            "title": "Yordam",
+            "text": "OpenAI himoyachilarga 1 mlrd dollarlik kredit vaʼda qildi."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "2-pozitsiya",
+        "title": "Hujumchilar ustun",
+        "accent": "Hujumchilar",
+        "points": [
+          {
+            "title": "Axborot sizib chiqdi",
+            "text": "NPR: tafsilotlar oshkor boʻlgach, hujumchilar tezda harakatga oʻtdi."
+          },
+          {
+            "title": "Kichik jamoalar",
+            "text": "Krebs: kichik kompaniyalar zaifliklarni tuzatishda qiynaladi."
+          },
+          {
+            "title": "Vaqt yetmaydi",
+            "text": "Anthropic CISO oʻrinbosari: yaxshilanishdan oldin vaziyat ancha yomonlashadi."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Nima qilish kerak?",
+        "title": "PHP versiyangizni tekshiring",
+        "accent": "PHP",
+        "body": "Tuzatilgan: 8.5.12, 8.4.27, 8.3.36, 8.2.35 (yoki vendor yamoqli build). Versiyani tekshiring.",
+        "code": "php -v\nphp -r 'echo PHP_VERSION, \"\\n\";'\n# Debian/Ubuntu:\napt list --installed 2>/dev/null | grep -i php"
+      }
+    ],
+    "caption": "🛡 <b>AI zaiflikni topdi — bu kimga foyda?</b> PHP2Shell (<code>CVE-2026-109618</code>, <code>CVE-2026-109619</code>) — PHPdagi ikki jiddiy zaiflik, AI yordamida topilgan. Yamoqlar 21-oktabrda chiqdi.\n\nBir tomon: himoyachilar hujumchilardan oldin vaqt yutdi. Ikkinchi tomon: tafsilotlar sizib chiqdi, kichik jamoalar esa ulgurmaydi. Unit 42 Yevropa hukumatiga hujum haqidagi daʼvosini qaytarib oldi, yaʼni hammasi ham tasdiqlanmagan.\n\n<blockquote>Avval tekshiring: <code>php -v</code></blockquote>\n\nManbalar: <a href=\"https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html\">CNBC</a>, <a href=\"https://www.npr.org/2026/10/24/nx-s1-6012327/ai-found-the-flaw-hackers-found-the-leak-the-race-to-save-php2shell\">NPR</a>.\n\n🗳 Ovoz bering va fikringizni izohlarda yozing!",
+    "sources": [
+      {
+        "name": "CNBC — AI's 'Black October'",
+        "url": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html"
+      },
+      {
+        "name": "NPR — The race to save PHP2SHELL",
+        "url": "https://www.npr.org/2026/10/24/nx-s1-6012327/ai-found-the-flaw-hackers-found-the-leak-the-race-to-save-php2shell"
+      },
+      {
+        "name": "The Next Web — Unit 42 retraction, third PHP flaw",
+        "url": "https://thenextweb.com/news/php2shell-third-flaw-php-no-emergency-fix"
+      },
+      {
+        "name": "The Hacker News — PHP2Shell exploitation attempts",
+        "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
+      },
+      {
+        "name": "Ground News — PHP2Shell exploited in the wild",
+        "url": "https://ground.news/article/unit-42-says-an-agentic-attacker-reached-mfa-secrets-two-hours-into-a-php2shell-break-in"
+      }
+    ],
+    "poll": {
+      "question": "AI zaifliklarni topishi kimga koʻproq foyda keltiradi?",
+      "options": [
+        "Himoyachilarga — ular oldinroq topadi",
+        "Hujumchilarga — tez va arzon qurol",
+        "Hozircha aniq emas, vaqt koʻrsatadi"
+      ]
+    }
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHat-Nh0P2ceK7CbVmXkZbFsTV2VMAAm4iaxuNgAABS0A_kGeEa1ApAQADAgADeQADPQQ",
+    "AgACAgIAAxUHat-Nh3gY2nZIdNf9yQ1xXLh7SiMAAnAiaxuNgAABS3DsP4BEkiyMAQADAgADeQADPQQ",
+    "AgACAgIAAxUHat-Nh2-w5NSVqFyidDufaYu0mBYAAm8iaxuNgAABS_fcLl6MXF_2AQADAgADeQADPQQ",
+    "AgACAgIAAxUHat-NhwoAAZPSZ07hp5Wc0qJ8AAGwrQACcSJrG42AAAFLcRE38E0UbBgBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHat-Nh5BBaLNzGLoWQEzxlL4tebYAAm0iaxuNgAABSyYUbFkU7dOqAQADAgADeQADPQQ"
+  ],
+  "control_message_id": 34
+}
