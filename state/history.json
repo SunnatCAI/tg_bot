@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "date": "2026-10-26",
+    "slot": "noon",
+    "topic": "pip-audit-python-dependency-check"
+  }
+]
