@@ -3,5 +3,10 @@
     "date": "2026-10-26",
     "slot": "noon",
     "topic": "pip-audit-python-dependency-check"
+  },
+  {
+    "date": "2026-10-27",
+    "slot": "morning",
+    "topic": "php2shell-critical-php-rce"
   }
 ]
