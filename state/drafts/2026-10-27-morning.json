@@ -1,0 +1,123 @@
+{
+  "id": "2026-10-27-morning",
+  "slot": "morning",
+  "post": {
+    "topic": "php2shell-critical-php-rce",
+    "palette": "alert_red",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "PHP2Shell",
+        "title": "PHP dvigatelida jiddiy zaiflik",
+        "accent": "jiddiy",
+        "body": "PHP 21-oktabrda ikki kritik zaiflikni yopdi: autentifikatsiyasiz masofadan kod bajarish (RCE) mumkin."
+      },
+      {
+        "layout": "points",
+        "kicker": "Nima boʻldi",
+        "title": "Ikki CVE, bitta nom",
+        "accent": "CVE",
+        "points": [
+          {
+            "title": "Ikki kritik CVE",
+            "text": "CVE-2026-109618 va CVE-2026-109619: ikkalasi CVSS v4.0 boʻyicha 9.2."
+          },
+          {
+            "title": "Login talab qilinmaydi",
+            "text": "Maxsus HTTP soʻrov orqali serverda kod ishga tushishi mumkin."
+          },
+          {
+            "title": "Oʻn yillik xato",
+            "text": "Zaif kod 2012-yildagi PHP 5.4 dan beri mavjud."
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "Holat",
+        "title": "Hujumlar bormi?",
+        "accent": "Hujumlar",
+        "points": [
+          {
+            "title": "Skanerlash",
+            "text": "Cloudflare eʼlondan keyin millionlab urinishni qayd etgan."
+          },
+          {
+            "title": "RCE tasdiqlanmagan",
+            "text": "Ommaviy muvaffaqiyatli hujum hali tasdiqlanmagan."
+          },
+          {
+            "title": "Xavf oʻsmoqda",
+            "text": "VulnCheck ASLRni aylanib oʻtuvchi exploit yaratgan."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Tuzatish",
+        "title": "Qaysi versiyaga oʻtish kerak?",
+        "accent": "versiyaga",
+        "points": [
+          {
+            "title": "8.5.12 va 8.4.27",
+            "text": "8.5 va 8.4 shoxlari uchun tuzatilgan versiyalar."
+          },
+          {
+            "title": "8.3.36 va 8.2.35",
+            "text": "8.3 va 8.2 shoxlari uchun tuzatilgan versiyalar."
+          },
+          {
+            "title": "8.1 va eskilari",
+            "text": "Rasmiy reliz yoʻq: vendor yamogʻi yoki yangi shoxga oʻting."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Amaliyot",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "body": "Versiyani tekshiring, yangilang va PHP-FPMni qayta ishga tushiring.",
+        "code": "php -v\nphp-fpm -v\n# Debian/Ubuntu: yangilanishlarni koʻrish\nsudo apt update\napt list --upgradable 2>/dev/null | grep php\n# Yangilagach (versiyangizga moslang):\nsudo systemctl restart php8.3-fpm"
+      }
+    ],
+    "caption": "🚨 <b>PHP2Shell</b>: PHP dvigatelidagi ikki kritik zaiflik (<code>CVE-2026-109618</code> va <code>CVE-2026-109619</code>) autentifikatsiyasiz masofadan kod bajarishga olib kelishi mumkin. Tuzatishlar 21-oktabrda chiqarilgan (<a href=\"https://www.greenbone.net/en/blog/php2shell-remote-code-execution-cve-2026-109618-cve-2026-109619/\">Greenbone</a>).\n\nEʼlondan keyin millionlab skanerlash urinishi qayd etilgan. Biroq <a href=\"https://scworld.com/news/php2shell-exploitation-confirmed-but-mass-attacks-remain-elusive\">SC World</a> yozishicha, 26-oktabr holatiga muvaffaqiyatli ommaviy hujum tasdiqlanmagan.\n\n<blockquote>PHPni 8.5.12, 8.4.27, 8.3.36 yoki 8.2.35 ga yangilang va PHP-FPMni qayta ishga tushiring.</blockquote>\n\nVersiyani <code>php -v</code> bilan tekshiring. PHP 8.1 va eskilari uchun rasmiy reliz chiqarilmaydi.",
+    "sources": [
+      {
+        "name": "SC World",
+        "url": "https://scworld.com/news/php2shell-exploitation-confirmed-but-mass-attacks-remain-elusive"
+      },
+      {
+        "name": "Security Affairs",
+        "url": "https://securityaffairs.com/201538/hacking/php2shell-millions-of-attacks-no-confirmed-successful-exploits-yet.html"
+      },
+      {
+        "name": "Greenbone",
+        "url": "https://www.greenbone.net/en/blog/php2shell-remote-code-execution-cve-2026-109618-cve-2026-109619/"
+      },
+      {
+        "name": "Qualys",
+        "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/10/20/php-announces-critical-security-release-for-two-vulnerabilities"
+      },
+      {
+        "name": "SecurityWeek",
+        "url": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/"
+      },
+      {
+        "name": "Help Net Security",
+        "url": "https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHat_9uE7ccNXWHnyn0JQx-oqg7JoAAtcZaxs69wFLwd_PkcNyNRwBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHat_9uBsLPXPwHEZ_FlBuKNWAJ5UAAtgZaxs69wFLQKNQcSXHcvQBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHat_9uLLxfWwP3R5aAX_owPsgMagAAtsZaxs69wFLnjrbyl98_G4BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHat_9uOOeHI5GVYo1NJ9tVwABulgmAALaGWsbOvcBS2uOcBfvRDelAQADAgADeQADPQQ",
+    "AgACAgIAAxUHat_9uClBjBBo4NCqlUuAx8a7KQgAAtkZaxs69wFLLtwxaiD8DDsBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 40
+}
