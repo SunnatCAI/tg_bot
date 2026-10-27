@@ -1,0 +1,140 @@
+{
+  "id": "2026-10-27-evening",
+  "slot": "evening",
+  "post": {
+    "topic": "banks-vs-ai-agents-account-access",
+    "palette": "ai_violet",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Kechki muhokama",
+        "title": "AI agent bank hisobingizda",
+        "accent": "agent",
+        "body": "AQSHdagi yirik banklar AI agentlarni mijoz hisoblaridan chetlatmoqda. Xavfsizlik uchunmi yoki nazorat uchunmi? Ikki tomonni koʻramiz."
+      },
+      {
+        "layout": "cards",
+        "kicker": "Fakt",
+        "title": "Banklar chegara qoʻydi",
+        "accent": "chegara",
+        "points": [
+          {
+            "title": "Bloklash",
+            "text": "Morgan Stanley tashqi agentlarni bloklay boshlagan (Axios)."
+          },
+          {
+            "title": "Cheklash",
+            "text": "JPMorgan, Bank of America va Citi agent kirishini cheklamoqda."
+          },
+          {
+            "title": "Read-only",
+            "text": "Oraliq yoʻl: koʻrish mumkin, pul oʻtkazish mumkin emas."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "1-pozitsiya",
+        "title": "Banklar tomoni: xavfsizlik",
+        "accent": "xavfsizlik",
+        "points": [
+          {
+            "title": "Niyat nomaʼlum",
+            "text": "Login toʻgʻri, lekin buyruqni odam berdimi yoki agent?"
+          },
+          {
+            "title": "Javobgarlik",
+            "text": "Agent xato qilsa, yoʻqotishni kim koʻtaradi — hali aniq emas."
+          },
+          {
+            "title": "Daʼvo, isbot emas",
+            "text": "Manbalar nomsiz; Morgan Stanley rogue agent kuzatmaganini aytdi."
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "2-pozitsiya",
+        "title": "Mijoz tomoni: tanlov",
+        "accent": "tanlov",
+        "points": [
+          {
+            "title": "Vosita tanlovi",
+            "text": "Agent mijoz tanlagan vosita, deydi tarafdorlar — brauzer kabi."
+          },
+          {
+            "title": "Raqobat",
+            "text": "Qattiq cheklov yirik banklarga foyda berishi mumkin, deyiladi."
+          },
+          {
+            "title": "Scoped token",
+            "text": "Parol oʻrniga cheklangan, muddatli, bekor qilinadigan ruxsat."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Amaliy xulosa",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "points": [
+          {
+            "title": "Parol bermang",
+            "text": "Bank login va parolini AI agentga bermang: bu odatda bank shartlarini buzadi."
+          },
+          {
+            "title": "Read-only afzal",
+            "text": "Agent kerak boʻlsa — faqat koʻrish huquqi, rasmiy open banking orqali."
+          },
+          {
+            "title": "Hisobni kuzating",
+            "text": "2FA va tranzaksiya ogohlantirishlarini yoqing, hisobni muntazam tekshiring."
+          },
+          {
+            "title": "Dasturchilarga",
+            "text": "Agent yozsangiz: scoped token, limit va audit logni boshidan qoʻshing."
+          }
+        ]
+      }
+    ],
+    "caption": "🏦 AQSHdagi yirik banklar mijoz nomidan kirayotgan AI agentlarni bloklamoqda yoki cheklamoqda. <a href=\"https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access\">Axios</a> nomaʼlum manbalarga tayanib yozdi, Morgan Stanley esa platformasida rogue agent kuzatmaganini aytdi — demak, bu hali tasdiqlanmagan daʼvo.\n\nBir tomon: login bilan kirgan agent kimning buyrugʻini bajarayotganini bank bilmaydi. Ikkinchi tomon: agent mijoz tanlagan vosita, qattiq cheklov esa raqobatni toraytirishi mumkin.\n\n<blockquote>Bank parolini hech qaysi AI agentga bermang.</blockquote>\n\n🗳 Ovoz bering va izohlarda fikringizni yozing: siz qaysi tomondasiz?",
+    "sources": [
+      {
+        "name": "Axios",
+        "url": "https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access"
+      },
+      {
+        "name": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/technology/ai/articles/major-u-banks-block-ai-155332259.html"
+      },
+      {
+        "name": "CBS News",
+        "url": "https://www.cbsnews.com/news/ai-agents-customer-bank-accounts-security/"
+      },
+      {
+        "name": "SecureWorld",
+        "url": "https://www.secureworld.io/industry-news/ai-agents-in-bank-accounts"
+      }
+    ],
+    "poll": {
+      "question": "AI agentlar bank hisobiga qanday kirishi kerak?",
+      "options": [
+        "Butunlay bloklash: pul xavfsizligi birinchi",
+        "Faqat read-only (koʻrish) ruxsati",
+        "Cheklangan yozish: limit va tasdiq bilan",
+        "Mijoz xohlasa, toʻliq ruxsat"
+      ]
+    }
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauDVGeQYLHvUR_Nzf5o6jIqO1M0AAxxrGzr3CUsAATh3CJjoY9oBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauDVGau-GGeUfGfpYPJ91uoQ9CEAAgEcaxs69wlLlUHWEmWXfZsBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauDVGWMP7-6lFfYf7kaQUziLkMcAAgIcaxs69wlL6EWyYPywW6oBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauDVGd6BOHbNjLNLYcgNdSwDRpEAAgQcaxs69wlLDWPpf0K32YwBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauDVGdha2ut3cnohnu_BbrF_YYsAAgMcaxs69wlLX3lSEuXv41kBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 52
+}
