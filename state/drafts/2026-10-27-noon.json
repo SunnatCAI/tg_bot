@@ -1,0 +1,103 @@
+{
+  "id": "2026-10-27-noon",
+  "slot": "noon",
+  "post": {
+    "topic": "gitleaks-secret-scanning-pre-commit",
+    "palette": "cyber_blue",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Git xavfsizligi",
+        "title": "API kalit Gitʼda qolmasin",
+        "accent": "Gitʼda",
+        "body": "Tasodifan commit qilingan token yoki parol tarixda saqlanib qoladi. Gitleaks buni commitdan oldin topadi."
+      },
+      {
+        "layout": "cards",
+        "kicker": "Muammo",
+        "title": "Commit tarixi unutmaydi",
+        "accent": "unutmaydi",
+        "points": [
+          {
+            "title": "Iz qoladi",
+            "text": "Faylni keyin oʻchirsangiz ham, kalit eski commitda saqlanadi."
+          },
+          {
+            "title": "Ochiq repo",
+            "text": "Public repoda kalit hammaga koʻrinadi."
+          },
+          {
+            "title": "Oldindan tekshiruv",
+            "text": "Gitleaks sirlarni commitdan oldin qidiradi."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "1-qadam",
+        "title": "Tarixni skanerlang",
+        "accent": "skanerlang",
+        "body": "Repo papkasida ishga tushiring. Gitleaks 8.19 yoki undan yangi versiya kerak.",
+        "code": "# versiyani tekshiring (8.19+)\ngitleaks version\n# butun commit tarixi\ngitleaks git --redact -v\n# faqat joriy fayllar\ngitleaks dir . --redact -v"
+      },
+      {
+        "layout": "code",
+        "kicker": "2-qadam",
+        "title": "Commitdan oldin toʻxtating",
+        "accent": "toʻxtating",
+        "body": "Repo ildizidagi .pre-commit-config.yaml fayliga yozing, soʻng pre-commit install.",
+        "code": "repos:\n  - repo: https://github.com/gitleaks/gitleaks\n    rev: v8.30.1\n    hooks:\n      - id: gitleaks"
+      },
+      {
+        "layout": "points",
+        "kicker": "Xulosa",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "points": [
+          {
+            "title": "Bugun skanerlang",
+            "text": "Oʻz loyihangizda gitleaks git --redact -v ni ishga tushiring."
+          },
+          {
+            "title": "Kalit topilsa",
+            "text": "Avval kalitni provayderda bekor qiling (revoke), keyin tarixni tozalang."
+          },
+          {
+            "title": "Hook — kamar",
+            "text": "--no-verify bilan oʻtkazib yuborish mumkin; yangi clone uchun qayta oʻrnating."
+          }
+        ]
+      }
+    ],
+    "caption": "🔑 <b>Gitleaks</b> — koddagi parol va API kalitlarni commitdan oldin topadigan bepul vosita. Tasodifan commit qilingan token Git tarixida qoladi, faylni keyin oʻchirsangiz ham.\n\nBoshlash: <code>gitleaks git --redact -v</code> butun tarixni tekshiradi (8.19+ versiya kerak). Keyin <a href=\"https://pre-commit.com\">pre-commit</a> orqali hookni ulang: <code>pre-commit install</code>. Kalit topilsa, avval uni bekor qiling.\n\n<blockquote>Hook — xavfsizlik kamari, qulf emas: uni --no-verify bilan oʻtkazib yuborish mumkin.</blockquote>\n\nDasturiy taʼminot: <a href=\"https://github.com/gitleaks/gitleaks\">Gitleaks</a>.",
+    "sources": [
+      {
+        "name": "Gitleaks (GitHub)",
+        "url": "https://github.com/gitleaks/gitleaks"
+      },
+      {
+        "name": "trmn.sh: Find leaked secrets in a git repo with gitleaks",
+        "url": "https://www.trmn.sh/guides/scan-repo-for-secrets-gitleaks"
+      },
+      {
+        "name": "Ajay Kumar: Secret scanning with Gitleaks and pre-commit",
+        "url": "https://www.ajayk.sh/blog/secret-scanning-gitleaks-pre-commit-guide/"
+      },
+      {
+        "name": "Go Packages: gitleaks v8.30.1",
+        "url": "https://pkg.go.dev/github.com/zricethezav/gitleaks/v8"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauB_by_O0qC_3MSrK2J_b_hERzIAAv0baxs69wFLTQmju96dB48BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauB_b-J5xmhBBIlLD5_UppF0XNsAAvobaxs69wFLROFEy_jpNysBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauB_b-sRMns1UaabWH0mwTNs5LEAAvwbaxs69wFLJM7hVyBBwQ8BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauB_byTa4qSUNC6fDbGbxtQMSScAAvsbaxs69wFLKlSEcAtHNuUBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauB_b9lBCIXC-qKwQ6dNaiBSwF4AAv4baxs69wFLQg7ICYbQlygBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 46
+}
