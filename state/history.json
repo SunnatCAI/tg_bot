@@ -8,5 +8,10 @@
     "date": "2026-10-27",
     "slot": "morning",
     "topic": "php2shell-critical-php-rce"
+  },
+  {
+    "date": "2026-10-27",
+    "slot": "noon",
+    "topic": "gitleaks-secret-scanning-pre-commit"
   }
 ]
