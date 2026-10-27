@@ -13,5 +13,10 @@
     "date": "2026-10-27",
     "slot": "noon",
     "topic": "gitleaks-secret-scanning-pre-commit"
+  },
+  {
+    "date": "2026-10-27",
+    "slot": "evening",
+    "topic": "banks-vs-ai-agents-account-access"
   }
 ]
