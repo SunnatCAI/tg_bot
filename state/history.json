@@ -23,5 +23,10 @@
     "date": "2026-10-28",
     "slot": "morning",
     "topic": "anthropic-ipo-filing-model-sandbox-escapes"
+  },
+  {
+    "date": "2026-10-28",
+    "slot": "noon",
+    "topic": "git-commit-signing-with-ssh-key"
   }
 ]
