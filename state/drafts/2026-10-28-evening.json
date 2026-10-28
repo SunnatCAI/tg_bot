@@ -1,0 +1,123 @@
+{
+  "id": "2026-10-28-evening",
+  "slot": "evening",
+  "post": {
+    "topic": "ai-and-junior-developer-jobs-debate",
+    "palette": "study_gold",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Kechki muhokama",
+        "title": "AI juniorlarni siqib chiqaryaptimi?",
+        "accent": "juniorlarni",
+        "body": "Kirish darajasidagi dasturchi ishlari haqida ikki xil qarash bor. Ikkalasini ham maʼlumotlar bilan koʻramiz."
+      },
+      {
+        "layout": "points",
+        "kicker": "1-qarash",
+        "title": "Eshik yopilmoqda",
+        "accent": "yopilmoqda",
+        "points": [
+          {
+            "title": "Stanford/ADP tadqiqoti",
+            "text": "AI taʼsiri yuqori kasblarda 22–25 yoshdagi yoshlar bandligi nisbatan 16% ga kamaygan"
+          },
+          {
+            "title": "Kattalarda barqaror",
+            "text": "Shu kasblarda 35–49 yoshdagilar bandligi 6–9% ga oshgan"
+          },
+          {
+            "title": "Laurie Voss fikri",
+            "text": "Kod yozish deyarli bepul boʻldi; qiyin joy — tekshiruv va xavfsizlik"
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "2-qarash",
+        "title": "Eshik yopilmayapti, oʻzgaryapti",
+        "accent": "oʻzgaryapti",
+        "points": [
+          {
+            "title": "Salesforce",
+            "text": "Talabalar va juniorlarni yollashni davom ettirishini bildirdi"
+          },
+          {
+            "title": "Isroil misoli",
+            "text": "AI va data yoʻnalishlariga qabul 3,9% ga oshdi"
+          },
+          {
+            "title": "Koʻnikma siljishi",
+            "text": "Qadr sintaksisni bilishdan AI natijasini tekshirishga oʻtdi"
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Umumiy nuqta",
+        "title": "Ikki tomon hamfikr joyi",
+        "accent": "hamfikr",
+        "points": [
+          {
+            "title": "Tekshirish muhim",
+            "text": "Kod yozishdan koʻra uni baholash qadrliroq boʻlib bormoqda"
+          },
+          {
+            "title": "Asoslar kerak",
+            "text": "Asoslarni bilmasdan AI natijasini baholab boʻlmaydi"
+          },
+          {
+            "title": "Amaliyot kerak",
+            "text": "Asoslarni real loyihalar bilan mustahkamlash tavsiya etiladi"
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Amaliy maslahat",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "body": "AI yozgan kodni commitdan oldin oʻzingiz koʻrib chiqing:",
+        "code": "git status\ngit diff --stat\ngit diff\n# Har bir oʻzgarishni tushunib oling\n# Tushunmasangiz — AIdan soʻrang"
+      }
+    ],
+    "caption": "💬 <b>Kechki muhokama: AI juniorlar uchun eshikni yopyaptimi?</b>\n\nBir tomon: <a href=\"https://wattsupwiththat.com/2026/10/24/what-is-the-point-of-studying-if-ai-will-take-all-the-jobs/\">Stanford/ADP maʼlumotlariga</a> koʻra, AI taʼsiri yuqori kasblarda 22–25 yoshdagi yoshlar bandligi nisbatan 16% ga kamaygan, 35–49 yoshdagilarniki esa 6–9% ga oshgan. Ikkinchi tomon: <a href=\"https://www.calcalistech.com/ctechnews/article/rkmgrnwhfg\">Salesforce</a> juniorlarni yollashni davom ettirayotganini aytadi, raqamlar esa qulashni emas, siljishni koʻrsatadi.\n\n<blockquote>Qadr kod yozishdan uni tekshira olishga oʻtmoqda.</blockquote>\n\nBu maʼlumotlar asosan AQSH va Isroil bozorlariga tegishli. Siz qaysi tomondasiz? Ovoz bering va izohlarda fikringizni yozing.",
+    "sources": [
+      {
+        "name": "Watts Up With That? (Stanford/ADP maʼlumotlari tahlili)",
+        "url": "https://wattsupwiththat.com/2026/10/24/what-is-the-point-of-studying-if-ai-will-take-all-the-jobs/"
+      },
+      {
+        "name": "DEV Community: AI's Payoff Problem (Laurie Voss fikri)",
+        "url": "https://dev.to/max_quimby/ais-payoff-problem-is-bigger-than-you-think-61e"
+      },
+      {
+        "name": "Calcalist: Salesforce doubles down on junior hiring",
+        "url": "https://www.calcalistech.com/ctechnews/article/rkmgrnwhfg"
+      },
+      {
+        "name": "Masai School: Is Coding Still Worth Learning After AI in 2026?",
+        "url": "https://www.masaischool.com/blog/is-coding-still-worth-learning-after-ai/"
+      }
+    ],
+    "poll": {
+      "question": "AI kirish darajasidagi dasturchi ishlariga qanday taʼsir qilmoqda?",
+      "options": [
+        "Eshik yopilmoqda: kirish ancha qiyinlashdi",
+        "Eshik yopilmayapti, talablar oʻzgaryapti",
+        "Hali aniq emas, maʼlumot yetarli emas"
+      ]
+    }
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauItHsStBpNARKrWqGn9pa3xESkAAnAjaxspDBBLzX97Xm4WwycBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauItHmDtgQHeJEz8-wzx5MjtmF8AAm0jaxspDBBL1hObeNI7nUsBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauItHslJ7aGvgnsU-gGe92-Ev4gAAm8jaxspDBBL16PKpS2rBO4BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauItHj7VWPqpUWS5id8G-WZaBkYAAm4jaxspDBBL-V9q9L6Ne0kBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauItHkDAaZI3F0PNmpZGTQwlrN4AAnEjaxspDBBL_YXl0j3lTtoBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 70
+}
