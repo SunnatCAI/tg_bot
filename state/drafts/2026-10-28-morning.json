@@ -1,0 +1,115 @@
+{
+  "id": "2026-10-28-morning",
+  "slot": "morning",
+  "post": {
+    "topic": "anthropic-ipo-filing-model-sandbox-escapes",
+    "palette": "claude_orange",
+    "brand_mark": "claude",
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Anthropic",
+        "title": "Sandbox ochiq qolib ketdi",
+        "accent": "Sandbox",
+        "body": "Anthropic IPO hujjati: toʻrtta AI model test muhitidan chiqib, real tashqi tizimlarga kirgan."
+      },
+      {
+        "layout": "points",
+        "kicker": "Faktlar",
+        "title": "Hujjatda nima deyilgan",
+        "accent": "Hujjatda",
+        "points": [
+          {
+            "title": "Toʻrtta model",
+            "text": "Xavfsizlik testi paytida real tashqi tizimlarga kirgan."
+          },
+          {
+            "title": "10–34 soat",
+            "text": "Shu oraliqdagi seanslar davomida kirish saqlangan."
+          },
+          {
+            "title": "Sozlama xatosi",
+            "text": "Hamkor muhitida internet oʻchirilishi kerak edi, ammo yoqilgan holda qolgan."
+          },
+          {
+            "title": "Xabardor qilingan",
+            "text": "Anthropic taʼsirlangan tomonlarga xabar berganini aytadi."
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "Alohida eʼlon",
+        "title": "Trening pauzasi",
+        "accent": "pauzasi",
+        "points": [
+          {
+            "title": "Pauza",
+            "text": "Yangi modelning pre-trainingi bir oydan ortiq toʻxtatilgan."
+          },
+          {
+            "title": "Sabab",
+            "text": "Model vaznlari va IP oʻgʻirlanishidan himoyalashni kuchaytirish."
+          },
+          {
+            "title": "Bogʻliqlik yoʻq",
+            "text": "Manbalar pauzani toʻrtta hodisa bilan bogʻlamaydi."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Saboq",
+        "title": "Qoida emas, toʻsiq kerak",
+        "accent": "toʻsiq",
+        "points": [
+          {
+            "title": "Koʻrsatma yetmaydi",
+            "text": "“Internet oʻchiq” sozlamasi ishlayotganini amalda tekshiring."
+          },
+          {
+            "title": "Minimal huquq",
+            "text": "Agentga faqat zarur token va fayllarni bering."
+          },
+          {
+            "title": "Chiqish nazorati",
+            "text": "Chiquvchi trafikni cheklang va loglarni kuzating."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Nima qilish kerak?",
+        "title": "Agentni tarmoqsiz ishga tushiring",
+        "accent": "tarmoqsiz",
+        "body": "Dockerda tarmoqni oʻchiring va haqiqatan ham oʻchganini tekshiring.",
+        "code": "docker run -d --name agent --network none \\\n  --read-only python:3.12-slim sleep 600\ndocker inspect agent \\\n  -f '{{.HostConfig.NetworkMode}}'\n# natija: none"
+      }
+    ],
+    "caption": "🤖 <b>Anthropic IPO hujjatida: toʻrtta AI model test muhitidan chiqib ketgan</b>\n\nReuters yozishicha, Anthropic IPO hujjatida toʻrtta modeli xavfsizlik testi davomida real tashqi tizimlarga kirganini tan olgan. Seanslar 10–34 soat davom etgan; sabab — hamkor tomondagi sozlama xatosi: internet oʻchirilishi kerak edi. Kompaniya modellar nazoratdan qochishga urinmaganini aytadi. Yangi modelning pre-trainingi ham vaznlarni himoyalash uchun bir oydan ortiq toʻxtatilgan.\n\n<blockquote>Agent uchun “internet yoʻq” degan koʻrsatma yetmaydi — toʻsiq texnik tarzda tekshirilishi kerak.</blockquote>\n\nXavfsiz misol: <code>docker run --network none</code> — slaydlarda. Manba: <a href=\"https://www.thestar.com.my/tech/tech-news/2026/10/27/anthropic-discloses-month-long-training-pause-ai-security-breaches-in-ipo-filing\">Reuters</a>, <a href=\"https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26\">Fox News</a>.",
+    "sources": [
+      {
+        "name": "Reuters (The Star)",
+        "url": "https://www.thestar.com.my/tech/tech-news/2026/10/27/anthropic-discloses-month-long-training-pause-ai-security-breaches-in-ipo-filing"
+      },
+      {
+        "name": "Fox News",
+        "url": "https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26"
+      },
+      {
+        "name": "ThePrint",
+        "url": "https://theprint.in/theprint-essential/anthropic-ai-security-training-pause/3083199/"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauFNHolfdGo2Qj6DNJhCVYjFtX8AAiIfaxs69wlLw_KxHe0cAxcBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauFNHi9bS1OLqJLSAv91S0hHCAMAAiUfaxs69wlLFn05QOPN2oYBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauFNHl0MyllUF1nJzVaRm-8p1IoAAiMfaxs69wlL3fKJlDJ-beABAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauFNHsC4HXqsDWWkKdFUOvaoy-8AAiEfaxs69wlLgphGLAZUWwUBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauFNHmX2RDf73gs9qysNDTh29qgAAiQfaxs69wlLF5m2yXOKbYMBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 58
+}
