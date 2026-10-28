@@ -1,0 +1,111 @@
+{
+  "id": "2026-10-28-noon",
+  "slot": "noon",
+  "post": {
+    "topic": "git-commit-signing-with-ssh-key",
+    "palette": "code_teal",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Git xavfsizligi",
+        "title": "Commit sizniki ekanini isbotlang",
+        "accent": "isbotlang",
+        "body": "Gitda user.emailʼni istalgan kishi yozishi mumkin. Imzo commit muallifini kriptografik tasdiqlaydi."
+      },
+      {
+        "layout": "points",
+        "kicker": "Muammo",
+        "title": "Muallifni soxtalashtirish oson",
+        "accent": "soxtalashtirish",
+        "points": [
+          {
+            "title": "Email oson almashadi",
+            "text": "git config user.email istalgan qiymatni qabul qiladi."
+          },
+          {
+            "title": "Imzo nima beradi",
+            "text": "Maxfiy kalit commitni imzolaydi, ochiq kalit tekshiradi."
+          },
+          {
+            "title": "Talab: Git 2.34+",
+            "text": "Tekshiring: git --version. OpenSSH ham yangi boʻlishi kerak."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Sozlash",
+        "title": "Uch buyruq bilan sozlash",
+        "accent": "sozlash",
+        "body": "SSH ed25519 kalitingiz bor deb faraz qilamiz. Buyruqlar xavfsiz.",
+        "code": "git config --global gpg.format ssh\ngit config --global \\\n  user.signingkey ~/.ssh/id_ed25519.pub\ngit config --global commit.gpgsign true"
+      },
+      {
+        "layout": "cards",
+        "kicker": "Tekshiruv",
+        "title": "Imzolash va tekshirish",
+        "accent": "tekshirish",
+        "points": [
+          {
+            "title": "Imzolang",
+            "text": "Bitta commit qiling: git commit -S -m xabar"
+          },
+          {
+            "title": "GitHubga qoʻshing",
+            "text": "Settings → SSH and GPG keys → New SSH key. Turi: Signing Key"
+          },
+          {
+            "title": "Mahalliy tekshiruv",
+            "text": "git log --show-signature -1 (allowed_signers fayli kerak)"
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Xulosa",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "points": [
+          {
+            "title": "Kalitga parol qoʻying",
+            "text": "Passphrase va ssh-agent ishlating; maxfiy kalit hech kimga berilmasin."
+          },
+          {
+            "title": "Vigilant mode",
+            "text": "Faqat hamma commitni imzolasangiz yoqing: imzosizlari Unverified boʻladi."
+          },
+          {
+            "title": "Email tasdiqlansin",
+            "text": "Committer email GitHub hisobingizda tasdiqlangan boʻlishi kerak."
+          }
+        ]
+      }
+    ],
+    "caption": "🔏 <b>Git commitni oʻz SSH kalitingiz bilan imzolang</b>\n\nGitda muallif nomi va email oddiy sozlama hisoblanadi, ularni istalgan kishi oʻzgartira oladi. SSH imzo commit aynan sizniki ekanini kriptografik tasdiqlaydi. Buning uchun Git 2.34+ va oʻzingizning SSH kalitingiz yetarli.\n\nAsosiy qadamlar: <code>git config --global gpg.format ssh</code>, soʻng <code>user.signingkey</code> ga ochiq kalit yoʻlini bering va <code>commit.gpgsign true</code> qiling. Keyin ochiq kalitni <a href=\"https://github.com/settings/keys\">GitHub</a> hisobingizga <i>Signing Key</i> turi bilan qoʻshing.\n\n<blockquote>Vigilant modeʼni faqat barcha commitlaringizni imzolay boshlaganingizdan keyin yoqing.</blockquote>",
+    "sources": [
+      {
+        "name": "GitHub Docs: vigilant mode",
+        "url": "https://docs.github.com/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits"
+      },
+      {
+        "name": "GitLab Docs: Sign commits with SSH keys",
+        "url": "https://docs.gitlab.com/user/project/repository/signed_commits/ssh/"
+      },
+      {
+        "name": "git-automation.com: GPG vs SSH commit signing",
+        "url": "https://www.git-automation.com/commit-signing-supply-chain-security/gpg-vs-ssh-commit-signing/"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauHbeypBPI88okUTAV4L2OuKH34AAp8gaxspDBBLFrsvt0mh_9EBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauHbe1KMuts1U76HAfDFzM0DVR8AAqAgaxspDBBLz0uGInqOSZ0BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauHbe81SlpcI93PU26R1YYdYmuEAAqMgaxspDBBLzmtAHkNpJJ8BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauHbe23cxaEp7a0QECLtKoSl8_8AAqIgaxspDBBLGCjyRI5OuHYBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauHbe-Op1cadlIedJl45C4BqGPAAAqEgaxspDBBLSHTMR7DPFksBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 64
+}
