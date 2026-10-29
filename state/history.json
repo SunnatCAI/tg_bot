@@ -43,5 +43,10 @@
     "date": "2026-10-29",
     "slot": "noon",
     "topic": "npm-ignore-scripts-and-audit-signatures"
+  },
+  {
+    "date": "2026-10-29",
+    "slot": "evening",
+    "topic": "ai-vulnerability-reports-open-source-maintainers-debate"
   }
 ]
