@@ -1,0 +1,124 @@
+{
+  "id": "2026-10-29-evening",
+  "slot": "evening",
+  "post": {
+    "topic": "ai-vulnerability-reports-open-source-maintainers-debate",
+    "palette": "ai_violet",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Kechki munozara",
+        "title": "AI xato topdi. Kim tuzatadi?",
+        "accent": "xato",
+        "body": "AI vositalari ochiq kodda xatolarni tez topmoqda. Savol: bu xavfsizlikni kuchaytiradimi yoki maintainerlarni charchatadimi?"
+      },
+      {
+        "layout": "points",
+        "kicker": "1-fikr: foyda",
+        "title": "Koʻproq topilsa, yaxshi",
+        "accent": "yaxshi",
+        "points": [
+          {
+            "title": "Haqiqiy xatolar",
+            "text": "OpenAI vakili: hisobotlarning koʻpi ehtimol haqiqiy xato."
+          },
+          {
+            "title": "PHP namunasi",
+            "text": "AI yordamida topilgan PHP xatolarini maintainerlar tuzatib, reliz chiqarishdi."
+          },
+          {
+            "title": "Patch natijalari",
+            "text": "OpenAI daʼvosicha: 661 patch tayyorlangan, 458 tasi qabul qilingan."
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "2-fikr: yuk",
+        "title": "Inson vaqti yetishmayapti",
+        "accent": "vaqti",
+        "points": [
+          {
+            "title": "Tekshiruv yuki",
+            "text": "Yuzlab hisobotning jiddiyligini inson baholashi kerak."
+          },
+          {
+            "title": "Eshik yopildi",
+            "text": "Baʼzi loyihalar AI hisobotlarini qabul qilishni toʻxtatgan."
+          },
+          {
+            "title": "Shovqin",
+            "text": "JFrog: signal/shovqin nisbati yomonlashmoqda, NVD zoʻriqmoqda."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Oʻrta yoʻl",
+        "title": "Hisobot sifati hal qiladi",
+        "accent": "sifati",
+        "points": [
+          {
+            "title": "Tekshirib yuboring",
+            "text": "Topilmani yuborishdan oldin oʻzingiz tasdiqlang."
+          },
+          {
+            "title": "Tushunarli yozing",
+            "text": "Bitta odam harakat qila oladigan aniq hisobot yozing."
+          },
+          {
+            "title": "Tuzatishga hissa",
+            "text": "Maintainer bilan hamkorlikda tuzatishni muvofiqlashtiring."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Amaliy xulosa",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "body": "Hisobot yuborsangiz: tekshiring, aniq yozing, patch taklif qiling. Loyiha egasi SECURITY.md yozsin.",
+        "code": "# SECURITY.md (namuna)\nZaiflik haqida: security@example.org\nKerak: versiya, taʼsir, takrorlash yoʻli\nAI topgan boʻlsa, qoʻlda tekshiring\nPatch taklifi boʻlsa, ilova qiling"
+      }
+    ],
+    "caption": "⚖️ <b>AI topgan zaifliklar: yordammi yoki yuk?</b>\n\nAI ochiq kodli loyihalardagi xatolarni tez topmoqda. OpenAI vakili 27 oktyabrda: hisobotlarning koʻpi ehtimol haqiqiy xato, ammo baʼzi maintainerlar ularni qabul qilishni toʻxtatgan (<a href=\"https://cyberscoop.com/openai-ai-generated-bug-reports/\">CyberScoop</a>). OpenAI oʻz daʼvosiga koʻra 661 patch tayyorlagan, 458 tasi qabul qilingan — bu mustaqil tasdiq emas.\n\n<blockquote>Xatoni topish yarmi xolos: tekshirish va tuzatish ham kerak.</blockquote>\n\nSizningcha, koʻp topilgani foydami yoki zararmi? Slaydlarda ikkala fikr bor. Ovoz bering va izohlarda fikringizni yozing 👇",
+    "sources": [
+      {
+        "name": "CyberScoop — Before you file that AI bug report, OpenAI has some advice",
+        "url": "https://cyberscoop.com/openai-ai-generated-bug-reports/"
+      },
+      {
+        "name": "Superpower Daily — OpenAI executive warns AI bug reports are overwhelming open-source maintainers",
+        "url": "https://superpowerdaily.com/posts/openai-executive-warns-ai-bug-reports-are-overwhelming-open-source-maintainers"
+      },
+      {
+        "name": "JFrog — The Industry Challenges of CVEs in the AI-Era",
+        "url": "https://jfrog.com/blog/the-impact-of-ai-on-cves-industry-challenges/"
+      },
+      {
+        "name": "OpenAI — Daybreak",
+        "url": "https://openai.com/daybreak/"
+      }
+    ],
+    "poll": {
+      "question": "AI bilan koʻplab zaiflik topilishi xavfsizlik uchun foydalimi?",
+      "options": [
+        "Foyda: har bir topilgan xato tuzatish imkoni",
+        "Yuk: volontyor maintainerlar bunga chiday olmaydi",
+        "Faqat tekshirilgan, patchli hisobotlar kerak",
+        "Hali aniq fikrim yoʻq"
+      ]
+    }
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauOCXrDZTDPWW7BwwIfVGAs0vUYAAtscaxspDCBLoA1RBdb7BncBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauOCXsbuJdPb6Y7i6jvogt-dQWQAAt4caxspDCBLhsNVrCuslbkBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauOCXmxx_7JA6gABVXcRNAUCpNJUAALdHGsbKQwgSw5i2eWXM9joAQADAgADeQADPQQ",
+    "AgACAgIAAxUHauOCXiopXmrfL_0BX3peDai5Lt4AAtocaxspDCBLMZrgDJ4ExW4BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauOCXg_gXRmbo6VAeDClFtwkrSYAAtwcaxspDCBLE8S275P_uv8BAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 88
+}
