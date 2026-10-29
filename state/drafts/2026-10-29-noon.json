@@ -1,0 +1,103 @@
+{
+  "id": "2026-10-29-noon",
+  "slot": "noon",
+  "post": {
+    "topic": "npm-ignore-scripts-and-audit-signatures",
+    "palette": "code_teal",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Kunduzgi qoʻllanma",
+        "title": "npm install xavfsizmi?",
+        "accent": "install",
+        "body": "Paket oʻrnatilayotganda dependency skriptlari avtomatik ishga tushishi mumkin. Buni bitta sozlama bilan nazorat qilamiz."
+      },
+      {
+        "layout": "cards",
+        "kicker": "Xavf",
+        "title": "Skriptlar nima qiladi?",
+        "accent": "Skriptlar",
+        "points": [
+          {
+            "title": "Avtomatik",
+            "text": "preinstall, install, postinstall oʻrnatish vaqtida oʻzi ishga tushadi"
+          },
+          {
+            "title": "Toʻliq huquq",
+            "text": "Skript sizning foydalanuvchi huquqlaringiz bilan ishlaydi"
+          },
+          {
+            "title": "Zanjir",
+            "text": "Bitta buzilgan dependency butun loyihaga taʼsir qiladi"
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": ".npmrc",
+        "title": "Skriptlarni oʻchirib qoʻying",
+        "accent": "oʻchirib",
+        "body": "Global sozlama. Kerakli paketni keyin alohida, ongli ravishda quraysiz.",
+        "code": "npm config set ignore-scripts true --global\n\n# Ishonchli native paket uchun:\nnpm rebuild sharp --ignore-scripts=false"
+      },
+      {
+        "layout": "points",
+        "kicker": "Himoya qatlami",
+        "title": "Faqat skript yetarli emas",
+        "accent": "yetarli",
+        "points": [
+          {
+            "title": "npm ci",
+            "text": "Faqat package-lock.json asosida oʻrnatadi, nomuvofiqlik boʻlsa xato beradi"
+          },
+          {
+            "title": "npm audit signatures",
+            "text": "Registry imzolari va provenance attestationlarini tekshiradi"
+          },
+          {
+            "title": "Cheklov",
+            "text": "Imzo paketning xavfsiz ekanini emas, balki qayerda qurilganini koʻrsatadi"
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Amaliyot",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "body": "Uchta xavfsiz buyruq: sozlamani tekshiring, toza oʻrnating, imzolarni tekshiring.",
+        "code": "# 1) Sozlamani tekshiring\nnpm config get ignore-scripts\n# 2) Toza oʻrnatish\nnpm ci --ignore-scripts\n# 3) Imzolarni tekshirish\nnpm audit signatures"
+      }
+    ],
+    "caption": "🛡 <b>npm install</b> faqat fayl yuklab olmaydi: dependencylarning <code>postinstall</code> kabi skriptlari ham sizning huquqlaringiz bilan ishga tushishi mumkin.\n\nEng arzon himoya: <code>npm config set ignore-scripts true --global</code>, CI da <code>npm ci --ignore-scripts</code>, soʻng <code>npm audit signatures</code> (npm v9.5+). Native paket (masalan, sharp) ishlamasa, faqat ishonchlisini <code>npm rebuild</code> bilan qaytaring.\n\n<blockquote>Hech bir flag xavfni toʻliq yoʻq qilmaydi, lekin bu eng oson birinchi qadam.</blockquote>\n\nBatafsil: <a href=\"https://docs.npmjs.com/cli/v10/commands/npm-audit/\">npm hujjatlari</a>.",
+    "sources": [
+      {
+        "name": "npm Docs: npm audit (signatures)",
+        "url": "https://docs.npmjs.com/cli/v10/commands/npm-audit/"
+      },
+      {
+        "name": "npm Docs: Viewing package provenance",
+        "url": "https://docs.npmjs.com/viewing-package-provenance/"
+      },
+      {
+        "name": "OpenReplay: A Simple Defense Against npm Supply Chain Attacks",
+        "url": "https://blog.openreplay.com/npm-supply-chain-defense/"
+      },
+      {
+        "name": "DEV Community: Why npm supply chain attacks keep happening",
+        "url": "https://dev.to/alanwest/why-npm-supply-chain-attacks-keep-happening-and-how-to-harden-your-installs-97p"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauMvZ9WBovsJ7CQHfljbieiF4xgAAlsdaxspDBhLZPMwWTgqjAYBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauMvZzpnRPpehSR9afjEQXsn79gAAlkdaxspDBhL95BkdAz9PukBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauMvZ-fdoa9T7N60_F47wjFpn7sAAlwdaxspDBhLDEOqsa3qtx8BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauMvZ9iHcKw58HBnPxBiIknuLZgAAl0daxspDBhLBK1KOHkPeeYBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauMvZ6hIQzujFuc-DseEvrOgme4AAlodaxspDBhLtECHFFHuc30BAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 82
+}
