@@ -1,0 +1,127 @@
+{
+  "id": "2026-10-29-morning",
+  "slot": "morning",
+  "post": {
+    "topic": "node2shell-brotli-cve-2026-111497-cisa-kev",
+    "palette": "alert_red",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "CISA ogohlantirdi",
+        "title": "Node2Shell xatosi hujumda",
+        "accent": "hujumda",
+        "body": "CISA Brotli kutubxonasidagi CVE-2026-111497 xatosini faol ekspluatatsiya qilinayotgan zaifliklar roʻyxatiga qoʻshdi."
+      },
+      {
+        "layout": "points",
+        "kicker": "Tekshirilgan",
+        "title": "Tasdiqlangan faktlar",
+        "accent": "faktlar",
+        "points": [
+          {
+            "title": "Xato mohiyati",
+            "text": "Brotli dekoderida out-of-bounds write; maxsus maʼlumot kodni ishga tushirishi mumkin"
+          },
+          {
+            "title": "CISA KEV",
+            "text": "27-oktabrda KEV ga qoʻshildi; AQSh idoralari uchun muddat — 10-noyabr"
+          },
+          {
+            "title": "Tuzatish mavjud",
+            "text": "Node.js 22.23.4, 24.22.1, 26.12.1 — 21-oktabrda chiqqan"
+          },
+          {
+            "title": "Hujum izlari",
+            "text": "Honeypotlarda urinishlar bor; qurbonlar nomi aytilmagan"
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "Kim xavf ostida",
+        "title": "Faqat Node.js emas",
+        "accent": "Node.js",
+        "points": [
+          {
+            "title": "Node.js",
+            "text": "Express 5 va fetch() Brotli ochsa, xavf bor"
+          },
+          {
+            "title": "Python",
+            "text": "brotli, brotlicffi; requests va httpx ham backend orqali ochadi"
+          },
+          {
+            "title": ".NET",
+            "text": "Microsoft favqulodda yangilanish chiqardi; qayta build kerak"
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Tekshiring",
+        "title": "Versiyani tekshirish",
+        "accent": "Versiyani",
+        "body": "Bu buyruqlar faqat oʻqiydi, tizimni oʻzgartirmaydi.",
+        "code": "# Node.js versiyasi\nnode --version\n\n# Python: brotli paketlari\npip list | grep -i brotli"
+      },
+      {
+        "layout": "points",
+        "kicker": "Amaliy xulosa",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "points": [
+          {
+            "title": "Node.js ni yangilang",
+            "text": "22.23.4, 24.22.1 yoki 26.12.1; qayta build va restart qiling"
+          },
+          {
+            "title": "Python paketlari",
+            "text": "pip install -U brotli brotlicffi (1.2.1 va 1.2.1.0 yoki yangi)"
+          },
+          {
+            "title": "Eski versiyalar",
+            "text": "Node 20 va eskisiga tuzatish yoʻq — qoʻllab-quvvatlanadigan liniyaga oʻting"
+          },
+          {
+            "title": "Konteynerlar",
+            "text": "Image va binarylarni qayta yigʻing; faqat npm yangilash yetmaydi"
+          }
+        ]
+      }
+    ],
+    "caption": "🚨 CISA 27-oktabrda Brotli kutubxonasidagi <b>Node2Shell</b> (<code>CVE-2026-111497</code>) xatosini faol ekspluatatsiya qilinayotgan zaifliklar (KEV) roʻyxatiga qoʻshdi. Xato Node.js, Bun, Python paketlari va .NET ga taʼsir qiladi.\n\nTuzatishlar 21-oktabrdan beri bor. Honeypotlarda hujum urinishlari qayd etilgan, lekin qurbonlar nomi aytilmagan va Python paketlari orqali hujum haqida maʼlumot yoʻq.\n\n<blockquote>Node.js ni 22.23.4, 24.22.1 yoki 26.12.1 ga yangilang, qayta build qiling va servisni restart qiling.</blockquote>\n\nVersiyani tekshirish: <code>node --version</code>. Manbalar: <a href=\"https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/\">BleepingComputer</a>, <a href=\"https://www.securityweek.com/cisa-warns-of-node2shell-exploitation-as-honeypots-log-attack-attempts/\">SecurityWeek</a>.",
+    "sources": [
+      {
+        "name": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/"
+      },
+      {
+        "name": "SecurityWeek",
+        "url": "https://www.securityweek.com/cisa-warns-of-node2shell-exploitation-as-honeypots-log-attack-attempts/"
+      },
+      {
+        "name": "SecurityWeek (patches)",
+        "url": "https://www.securityweek.com/node2shell-brotli-flaw-triggers-patching-across-microsoft-node-js-python-packages/"
+      },
+      {
+        "name": "Help Net Security",
+        "url": "https://www.helpnetsecurity.com/2026/10/27/node2shell-broccoli2shell-vulnerability-cve-2026-111497/"
+      },
+      {
+        "name": "SOCRadar",
+        "url": "https://socradar.io/blog/node2shell-brotli-flaw-hits-python-packages/"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauKeiQAB1l3q9Y1ZkVZWkWAGo6duAALxGmsbKQwYS7lQl7ObLa6dAQADAgADeQADPQQ",
+    "AgACAgIAAxUHauKeiaQdNrfEH02_qA_Xeb9lPlkAAu8aaxspDBhLTx_FfQha9FkBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauKeiZMUldWuf6D1vlbwTFoFdNcAAvAaaxspDBhLZ55v5wvBUI0BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauKeiWWYw_80_bX6Bu7xNxLIx5QAAu4aaxspDBhLpZhdAcIEvYYBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauKeiU2uNb0W2b7K6nC8AAE6T8VBAALyGmsbKQwYSw2aELeXlVTCAQADAgADeQADPQQ"
+  ],
+  "control_message_id": 76
+}
