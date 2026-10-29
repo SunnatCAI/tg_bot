@@ -33,5 +33,10 @@
     "date": "2026-10-28",
     "slot": "evening",
     "topic": "ai-and-junior-developer-jobs-debate"
+  },
+  {
+    "date": "2026-10-29",
+    "slot": "morning",
+    "topic": "node2shell-brotli-cve-2026-111497-cisa-kev"
   }
 ]
