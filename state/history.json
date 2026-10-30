@@ -48,5 +48,10 @@
     "date": "2026-10-29",
     "slot": "evening",
     "topic": "ai-vulnerability-reports-open-source-maintainers-debate"
+  },
+  {
+    "date": "2026-10-30",
+    "slot": "morning",
+    "topic": "linux-kernel-tcp-cve-2026-98432-ubuntu-rhel-unpatched"
   }
 ]
