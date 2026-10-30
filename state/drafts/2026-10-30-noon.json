@@ -1,0 +1,115 @@
+{
+  "id": "2026-10-30-noon",
+  "slot": "noon",
+  "post": {
+    "topic": "verify-effective-sshd-config-with-sshd-T",
+    "palette": "cyber_blue",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "SSH xavfsizligi",
+        "title": "Sozlamangiz haqiqatan ishlayaptimi?",
+        "accent": "haqiqatan",
+        "body": "Faylga PasswordAuthentication no deb yozdingiz. Lekin server amalda nimani qoʻllayotganini tekshirdingizmi?"
+      },
+      {
+        "layout": "points",
+        "kicker": "Muammo",
+        "title": "Nega fayl aldashi mumkin?",
+        "accent": "aldashi",
+        "points": [
+          {
+            "title": "Drop-in fayllar",
+            "text": "/etc/ssh/sshd_config.d/*.conf ham oʻqiladi, faqat asosiy fayl emas."
+          },
+          {
+            "title": "Birinchi moslik yutadi",
+            "text": "Sozlama takrorlansa, birinchi oʻqilgani kuchga kiradi."
+          },
+          {
+            "title": "Cloud-init xavfi",
+            "text": "Cloud-init fayli parol bilan kirishni qayta yoqib qoʻyishi mumkin."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Tekshirish",
+        "title": "Amaldagi sozlamani koʻring",
+        "accent": "Amaldagi",
+        "body": "Ikkala buyruq faqat oʻqiydi, hech narsani oʻzgartirmaydi.",
+        "code": "sudo sshd -T | grep -Ei \\\n  'passwordauthentication|permitrootlogin'\n\nsudo grep -rni passwordauthentication \\\n  /etc/ssh/sshd_config /etc/ssh/sshd_config.d/"
+      },
+      {
+        "layout": "cards",
+        "kicker": "Natija",
+        "title": "Nimani kutish kerak?",
+        "accent": "kutish",
+        "points": [
+          {
+            "title": "Parol",
+            "text": "passwordauthentication no boʻlishi kerak."
+          },
+          {
+            "title": "Root",
+            "text": "permitrootlogin no boʻlishi kerak."
+          },
+          {
+            "title": "Sintaksis",
+            "text": "Qayta ishga tushirishdan oldin sudo sshd -t ni ishlating."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Amaliyot",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "points": [
+          {
+            "title": "Avval kalitni sinang",
+            "text": "Ikkinchi terminalda kalit bilan kirishni tekshiring, keyin parolni oʻchiring."
+          },
+          {
+            "title": "sshd -T bilan tasdiqlang",
+            "text": "Faylni emas, serverning amaldagi natijasini oʻqing."
+          },
+          {
+            "title": "ssh-audit ni sinang",
+            "text": "pip3 install ssh-audit: server sozlamasini chuqurroq tahlil qiladi."
+          }
+        ]
+      }
+    ],
+    "caption": "🔐 <b>sshd_config ni oʻzgartirdingizmi? Natijani tekshirdingizmi?</b>\n\nServerda <code>PasswordAuthentication no</code> deb yozish yetarli emas. <code>/etc/ssh/sshd_config.d/</code> ichidagi fayllar ham oʻqiladi va sozlama takrorlansa, birinchi oʻqilgani kuchga kiradi. Shuning uchun cloud-init kabi fayl parolni yoqib qoʻyishi mumkin.\n\n<blockquote>Faylni emas, amaldagi natijani tekshiring: <code>sudo sshd -T | grep -Ei 'passwordauthentication|permitrootlogin'</code></blockquote>\n\nOʻzgartirishdan oldin kalit bilan kirishni sinang va <code>sudo sshd -t</code> ni ishlating. Qoʻshimcha audit uchun <a href=\"https://github.com/jtesta/ssh-audit\">ssh-audit</a> (v3.9.0) mavjud.",
+    "sources": [
+      {
+        "name": "StackHarbor: Disabling SSH password authentication safely",
+        "url": "https://stackharbor.com/en/knowledge-base/ssh-disable-password-auth/"
+      },
+      {
+        "name": "Bulwark: SSH hardening on Linux",
+        "url": "https://bulwark.nrl.ai/articles/ssh-hardening-checklist"
+      },
+      {
+        "name": "StackHarbor: OpenSSH server hardening checklist",
+        "url": "https://stackharbor.com/en/knowledge-base/sshd-hardening-checklist/"
+      },
+      {
+        "name": "ssh-audit v3.9.0 release",
+        "url": "https://github.com/jtesta/ssh-audit/releases/tag/v3.9.0"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauR_I3AXy7DhXkwlhPkPlhnNvWkAAgcgaxsQKClL2Hm6X7-6LFEBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauR_I17wWppPBHHIam_nCpQoRvoAAgYgaxsQKClLgcE8xMiKXJUBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauR_I71LDVwrr4rYpyO3I4PgIQADBCBrGxAoKUtfzgs3jWghXwEAAwIAA3kAAz0E",
+    "AgACAgIAAxUHauR_IyBvXdcGrltnFpxJJl35aTMAAgggaxsQKClLHD6Vb39_J_8BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauR_I-krEFFHTPB-TqFEavkfkDUAAgUgaxsQKClL564rDQmprMoBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 100
+}
