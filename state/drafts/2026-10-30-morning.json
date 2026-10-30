@@ -1,0 +1,115 @@
+{
+  "id": "2026-10-30-morning",
+  "slot": "morning",
+  "post": {
+    "topic": "linux-kernel-tcp-cve-2026-98432-ubuntu-rhel-unpatched",
+    "palette": "alert_red",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Linux yadrosi",
+        "title": "Linux yadrosida 9.8 ballik zaiflik",
+        "accent": "9.8",
+        "body": "Anthropic modeli yadrodagi TCP xatosidan masofadan root huquqini beruvchi exploit yozdi. Ubuntu va RHEL uchun tuzatish hali yoʻq."
+      },
+      {
+        "layout": "cards",
+        "kicker": "Faktlar",
+        "title": "Nima tasdiqlangan?",
+        "accent": "tasdiqlangan",
+        "points": [
+          {
+            "title": "Xato turi",
+            "text": "IPv4 TCP ulanish kodida race condition (use-after-free)."
+          },
+          {
+            "title": "Baholar",
+            "text": "Yadro jamoasi: 9.8. Red Hat, Amazon, Oracle, SUSE: 5.9–8.1."
+          },
+          {
+            "title": "Hujumlar",
+            "text": "29-oktyabr holatiga koʻra real hujumlar qayd etilmagan."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Patch holati",
+        "title": "Kim tuzatdi, kim yoʻq",
+        "accent": "yoʻq",
+        "points": [
+          {
+            "title": "Tuzatilgan",
+            "text": "Debian, Oracle Linux, SUSE, Amazon Linux: kamida baʼzi yadrolar uchun."
+          },
+          {
+            "title": "Ubuntu",
+            "text": "Barcha versiyalar zaif; tuzatish tayyorlanmoqda, sana eʼlon qilinmagan."
+          },
+          {
+            "title": "RHEL 8, 9, 10",
+            "text": "Tuzatish keyinga qoldirilgan. RHEL 7 bu xatodan zarar koʻrmaydi."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Tekshirish",
+        "title": "Serveringizni tekshiring",
+        "accent": "tekshiring",
+        "body": "Yadro versiyasi va yangilanishlarni koʻring (faqat oʻqish).",
+        "code": "uname -r\nsysctl net.mptcp.enabled\nss -tln\napt list --upgradable 2>/dev/null | grep linux"
+      },
+      {
+        "layout": "cards",
+        "kicker": "Xulosa",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "points": [
+          {
+            "title": "Aniqlang",
+            "text": "Ubuntu/RHEL serverlaringiz roʻyxatini tuzing, ochiqlarini ajrating."
+          },
+          {
+            "title": "Kuzating",
+            "text": "Ubuntu va Red Hat advisory sahifalarini har kuni tekshiring."
+          },
+          {
+            "title": "Yangilang",
+            "text": "Paket chiqishi bilan yadroni yangilab, serverni reboot qiling."
+          }
+        ]
+      }
+    ],
+    "caption": "🚨 <b>Linux yadrosida kritik zaiflik: CVE-2026-98432.</b> Anthropic aytishicha, uning eʼlon qilinmagan Claude modeli MPTCP tinglovchisi bor Linux serverlarda masofadan root huquqini beruvchi exploit yozgan. Bu laboratoriya natijasi, kodi eʼlon qilinmagan.\n\nYadro jamoasi 9.8 ball bergan, vendorlar 5.9–8.1. Debian va Oracle Linux paket chiqargan, <b>Ubuntu va RHEL uchun 29-oktyabr holatiga koʻra tuzatish yoʻq</b>. Real hujum qayd etilmagan.\n\n<blockquote>Tuzatish chiqishi bilan yadroni yangilang va reboot qiling.</blockquote>\n\nTekshirish: <code>uname -r</code>. Manba: <a href=\"https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html\">The Hacker News</a>.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html"
+      },
+      {
+        "name": "Cyber Kendra",
+        "url": "https://www.cyberkendra.com/2026/10/cve-2026-98432-linux-kernel-tcp-flaw-ubuntu-rhel.html"
+      },
+      {
+        "name": "Atlas",
+        "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf"
+      },
+      {
+        "name": "pwn.watch",
+        "url": "https://pwn.watch/i/linux-kernel-ipv4-tcp-uaf-cve-2026-98432"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauPwMCmMZ9FwL-M5l4v-b1lCDBkAAmQcaxsQKCFLgY47xoJkV28BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauPwMNaWVSO-XFp7CbJH-jPQT6gAAmccaxsQKCFLCKbgwlJ8ocEBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauPwMGIL78Hxh3eg-BNwu1aDm1oAAmYcaxsQKCFL4RWAcyJTEyIBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauPwMIJKWZ1eaJ8KBCNrBHDoRLEAAmgcaxsQKCFL35uYzrrbUncBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauPwMLu5GBznHP18URyWv6w30OIAAmUcaxsQKCFLh3CdUty7_osBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 94
+}
