@@ -1,0 +1,119 @@
+{
+  "id": "2026-10-31-morning",
+  "slot": "morning",
+  "post": {
+    "topic": "wordpress-7-1-4-update-window-rce",
+    "palette": "alert_red",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Ogohlantirish",
+        "title": "WordPress yangilanishida RCE nuqsoni",
+        "accent": "RCE",
+        "body": "WordPress 7.1.4 bilan 22 ta zaiflik yopildi. Eng jiddiysi — yangilanish vaqtida login talab qilmaydigan RCE."
+      },
+      {
+        "layout": "points",
+        "kicker": "Qanday ishlaydi",
+        "title": "Yangilanish vaqtidagi oyna",
+        "accent": "oyna",
+        "points": [
+          {
+            "title": "Vaqtinchalik papka",
+            "text": "Yangilanish vaqtida fayllar wp-content/upgrade papkasiga ochiladi."
+          },
+          {
+            "title": "Oʻrnatuvchi ochiq",
+            "text": "Bashorat qilinadigan yoʻl tufayli oʻrnatuvchi veb orqali koʻrinib qolishi mumkin."
+          },
+          {
+            "title": "Poyga sharti",
+            "text": "Hujumchi papka tozalanishidan oldin, bir necha soniyada ulgurishi kerak."
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "Faktlar",
+        "title": "Tasdiqlangan raqamlar",
+        "accent": "raqamlar",
+        "points": [
+          {
+            "title": "62 969",
+            "text": "Wordfence 24 soatda shuncha hujum urinishini bloklagan."
+          },
+          {
+            "title": "4.7–7.1.3",
+            "text": "Zaif WordPress versiyalari. Tuzatish 7.1.4 da."
+          },
+          {
+            "title": "Buzilish yoʻq",
+            "text": "Wordfence muvaffaqiyatli buzilish haqida xabar bermagan."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Baho",
+        "title": "Xavf qanchalik real?",
+        "accent": "real",
+        "points": [
+          {
+            "title": "Hujum qiyin",
+            "text": "Muvaffaqiyat uchun soniyalik oraliq kerak, shuning uchun xavf cheklangan."
+          },
+          {
+            "title": "Lekin eʼtiborsiz emas",
+            "text": "Skanerlash avtomatik ketmoqda. Bu hujumlar allaqachon boshlangan."
+          },
+          {
+            "title": "CVE hali yoʻq",
+            "text": "Hacker News yozishicha, bu nuqsonga CVE raqami berilmagan."
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Nima qilish kerak?",
+        "title": "Hozir tekshiring",
+        "accent": "tekshiring",
+        "body": "WP-CLI bilan versiyani tekshiring va yangilang. Avval zaxira nusxa oling.",
+        "code": "wp core version\nwp core check-update\nwp core update\nwp core verify-checksums\nwp user list --role=administrator\nls -la wp-content/upgrade"
+      }
+    ],
+    "caption": "🚨 <b>WordPress 7.1.4: yangilanish jarayonidagi RCE nuqsoni</b>\n\n28-oktabrda chiqqan WordPress 7.1.4 jami 22 ta zaiflikni yopdi. Eng jiddiysi — core yangilanishi vaqtidagi poyga sharti (race condition): login shart emas, lekin hujumchi bir necha soniyalik oraliqqa ulgurishi kerak. <a href=\"https://www.wordfence.com/blog/2026/10/wordpress-7-1-4-security-release-rce/\">Wordfence</a> 24 soatda 62 969 urinishni bloklagan va muvaffaqiyatli buzilish haqida xabar bermagan.\n\n<blockquote>4.7–7.1.3 versiyalari zaif: <code>wp core version</code> bilan tekshiring, <code>wp core update</code> bilan yangilang.</blockquote>\n\nAvtomatik yangilanish bajarilgan deb oʻylamang, versiyani qoʻlda tekshiring. Keyin yangi administrator akkauntlari va <code>wp-content/upgrade</code> ichidagi notanish PHP fayllarni koʻrib chiqing.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html"
+      },
+      {
+        "name": "SecurityWeek",
+        "url": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/"
+      },
+      {
+        "name": "Search Engine Journal",
+        "url": "https://www.searchenginejournal.com/wordpress-announces-another-security-release-version-7-1-4/594798/"
+      },
+      {
+        "name": "GBHackers",
+        "url": "https://gbhackers.com/wordpress-7-1-4-fixes-22-security-vulnerabilities/"
+      },
+      {
+        "name": "Brandefense",
+        "url": "https://brandefense.io/security-news/wordpress-7-1-4-security-update-upgrade-window/"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauVBmMBnIOsSh5VKbdi0MuqVF8MAArUjaxsQKClLT4JZ-TqAIw0BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauVBmNnE_9LsVQABdyhixJkzySxpAAKzI2sbECgpS1rxZtYyF4ROAQADAgADeQADPQQ",
+    "AgACAgIAAxUHauVBmJmDS1keuCtXeFUJfCEwcGkAArQjaxsQKClLboir4Mmbyh4BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauVBmBg0L2Q-x2javXYjNMTXgeAAArIjaxsQKClLoSV_N7EI3x4BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauVBmGhGXhE4TzEG5lqKyqFB01cAArEjaxsQKClL8Zi1EVA6V3EBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 106
+}
