@@ -63,5 +63,10 @@
     "date": "2026-10-31",
     "slot": "morning",
     "topic": "wordpress-7-1-4-update-window-rce"
+  },
+  {
+    "date": "2026-10-31",
+    "slot": "noon",
+    "topic": "check-listening-ports-with-ss"
   }
 ]
