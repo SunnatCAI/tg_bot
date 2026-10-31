@@ -1,0 +1,90 @@
+{
+  "id": "2026-10-31-noon",
+  "slot": "noon",
+  "post": {
+    "topic": "check-listening-ports-with-ss",
+    "palette": "cyber_blue",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Kunduzgi qoʻllanma",
+        "title": "Qaysi portlar ochiq?",
+        "accent": "ochiq",
+        "body": "Kompyuteringiz yoki serveringizda qaysi xizmatlar tashqaridan ulanishni kutmoqda? Bir buyruq bilan bir daqiqada bilib oling."
+      },
+      {
+        "layout": "code",
+        "kicker": "Linux",
+        "title": "Bitta buyruq yetarli",
+        "accent": "buyruq",
+        "body": "Tinglovchi TCP va UDP portlar hamda ularni ochgan jarayonlar roʻyxati.",
+        "code": "sudo ss -tulnp\n\n# -t TCP, -u UDP\n# -l faqat tinglovchi portlar\n# -n raqamli manzil va port\n# -p jarayon nomi va PID"
+      },
+      {
+        "layout": "cards",
+        "kicker": "Natijani oʻqish",
+        "title": "Manzilga eʼtibor bering",
+        "accent": "Manzilga",
+        "points": [
+          {
+            "title": "127.0.0.1",
+            "text": "Faqat shu kompyuterning oʻzidan ulanish mumkin."
+          },
+          {
+            "title": "0.0.0.0",
+            "text": "Barcha IPv4 interfeyslarda tinglanmoqda."
+          },
+          {
+            "title": "[::]",
+            "text": "Barcha IPv6 interfeyslarda tinglanmoqda."
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Amaliyot",
+        "title": "Nima qilish kerak?",
+        "accent": "qilish",
+        "points": [
+          {
+            "title": "Jarayonni aniqlang",
+            "text": "sudo ss -tlnp sport = :8080 bilan bitta portni filtrlang."
+          },
+          {
+            "title": "Keraksizni toʻxtating",
+            "text": "Xizmat kerak boʻlmasa oʻchiring yoki 127.0.0.1 ga bogʻlang."
+          },
+          {
+            "title": "Firewall bilan tekshiring",
+            "text": "Ochiq port internetdan ochiq degani emas: firewall va NAT ham taʼsir qiladi."
+          },
+          {
+            "title": "Muntazam takrorlang",
+            "text": "Yangi xizmat oʻrnatgach yoki oyda bir marta qayta tekshiring."
+          }
+        ]
+      }
+    ],
+    "caption": "🔍 Qurilmangizda qaysi portlar ochiq ekanini bilasizmi? Koʻpchilik buni hech qachon tekshirmaydi. Linuxda bitta buyruq yetadi: <code>sudo ss -tulnp</code>.\n\nU barcha tinglovchi TCP va UDP portlarni hamda ularni ochgan jarayonni koʻrsatadi. <code>127.0.0.1</code> faqat lokal ulanishga ruxsat beradi, <code>0.0.0.0</code> va <code>[::]</code> esa barcha interfeyslarda tinglashni bildiradi.\n\n<blockquote>Notanish ochiq port hali xavf degani emas, lekin savolsiz qoldirmang.</blockquote>\n\nManbalar: <a href=\"https://linuxize.com/post/check-listening-ports-linux/\">Linuxize</a>, <a href=\"https://manpages.debian.org/testing/iproute2/ss.8.en.html\">Debian man page</a>.",
+    "sources": [
+      {
+        "name": "Linuxize — How to Check Listening Ports in Linux",
+        "url": "https://linuxize.com/post/check-listening-ports-linux/"
+      },
+      {
+        "name": "Debian Manpages — ss(8)",
+        "url": "https://manpages.debian.org/testing/iproute2/ss.8.en.html"
+      }
+    ]
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauXJzlW4jqqbKdnoEfFnIa46WNQAAuUaaxtcNjFLpdXiuKdnPBUBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauXJzk2LXfvjSU2SEmzXPZkjHFwAAuQaaxtcNjFLgqlKTEKT6I8BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauXJzgEcEuGQIC75yb0BSe07GncAAuYaaxtcNjFLASfBex_7Lt0BAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauXJzvR9ryai3bOYv8UKOJUu-JEAAucaaxtcNjFLQ0n7TGTyr6sBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 111
+}
