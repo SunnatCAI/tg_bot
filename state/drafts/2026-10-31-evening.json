@@ -1,0 +1,124 @@
+{
+  "id": "2026-10-31-evening",
+  "slot": "evening",
+  "post": {
+    "topic": "uk-budget-agentic-ai-cyber-defence-debate",
+    "palette": "cyber_blue",
+    "brand_mark": null,
+    "slides": [
+      {
+        "layout": "hero",
+        "kicker": "Kechki muhokama",
+        "title": "Agentlar infratuzilmani qoʻriqlasinmi?",
+        "accent": "infratuzilmani",
+        "body": "28-oktabr byudjetida Buyuk Britaniya kiber himoya uchun agentic AIʼga mablagʻ ajratdi. Fikrlar boʻlindi."
+      },
+      {
+        "layout": "points",
+        "kicker": "Nima boʻldi?",
+        "title": "Byudjet nimaga pul ajratdi",
+        "accent": "pul",
+        "points": [
+          {
+            "title": "National Cyber Shield",
+            "text": "£60 mln: agentic AI asosidagi milliy kiber himoyaning 1-bosqichi"
+          },
+          {
+            "title": "NERV markazi",
+            "text": "£70 mln: AI infratuzilmasi boʻylab zaifliklarni qidiradi"
+          },
+          {
+            "title": "Agentic Security Unit",
+            "text": "£40 mln: nazoratdan chiqqan agentlar hodisalariga javob beradi"
+          }
+        ]
+      },
+      {
+        "layout": "cards",
+        "kicker": "Birinchi nuqtai nazar",
+        "title": "Tarafdorlar: tezlik kerak",
+        "accent": "tezlik",
+        "points": [
+          {
+            "title": "Tezlik",
+            "text": "Hujumchilar ham AI ishlatadi — himoya ham tez boʻlishi kerak"
+          },
+          {
+            "title": "Daʼvo",
+            "text": "Vazir daʼvosiga koʻra, AI davlat sektorida 500 ta zaiflik topgan"
+          },
+          {
+            "title": "Sandbox",
+            "text": "Agentlar avval nazoratli muhitda sinovdan oʻtkazilishi rejalashtirilgan"
+          }
+        ]
+      },
+      {
+        "layout": "points",
+        "kicker": "Ikkinchi nuqtai nazar",
+        "title": "Skeptiklar: nazorat muhim",
+        "accent": "nazorat",
+        "points": [
+          {
+            "title": "Katta huquq — katta xavf",
+            "text": "Agentga haddan ortiq ruxsat berilsa, bitta buzilish katta zarar beradi"
+          },
+          {
+            "title": "Inson nazorati",
+            "text": "NCSC: agent mustaqilligi oshgani sari inson nazorati markazda qolsin"
+          },
+          {
+            "title": "Rogue agentlar",
+            "text": "Byudjetning oʻzida nazoratdan chiqqan agentlar uchun £40 mln birlik ajratilgan"
+          }
+        ]
+      },
+      {
+        "layout": "code",
+        "kicker": "Nima qilish kerak?",
+        "title": "Agentga minimal huquq bering",
+        "accent": "minimal",
+        "body": "Agent uchun alohida foydalanuvchi oching va uning huquqlarini tekshiring (faqat koʻrish buyruqlari).",
+        "code": "# agent huquqlarini koʻrish\nid agent\ngroups agent\nsudo -l -U agent"
+      }
+    ],
+    "caption": "🛡 <b>Kritik infratuzilmani AI agentlar qoʻriqlasinmi?</b>\n\n28-oktabr byudjetida Britaniya <a href=\"https://www.publictechnology.net/2026/10/29/economics-and-finance/budgets-700m-ai-splurge-includes-new-govai-unit-and-fightback-against-rogue-agents/\">700 mln funtdan ortiq AI paketini</a> eʼlon qildi: agentic AI asosidagi Cyber Shield, NERV markazi va nazoratdan chiqqan agentlar uchun alohida birlik. Tarafdorlar tezlikni, skeptiklar esa huquq va inson nazoratini taʼkidlaydi.\n\n<blockquote>Agent himoyachi boʻlsa, uni kim himoya qiladi?</blockquote>\n\nOvoz bering va fikringizni izohlarda yozing 👇",
+    "sources": [
+      {
+        "name": "PublicTechnology — Budget’s £700m AI splurge",
+        "url": "https://www.publictechnology.net/2026/10/29/economics-and-finance/budgets-700m-ai-splurge-includes-new-govai-unit-and-fightback-against-rogue-agents/"
+      },
+      {
+        "name": "AIFront — UK £40 million rogue AI agents unit",
+        "url": "https://aifront-page.com/uk-40-million-rogue-ai-agents-security-unit/"
+      },
+      {
+        "name": "Cyber News Centre — UK’s £600m AI Security Plan",
+        "url": "https://www.cybernewscentre.com/uks-600m-ai-security-plan-links-cyber-biosecurity-and-chips/"
+      },
+      {
+        "name": "The Register — Britain bets big on AI to defend against AI threats",
+        "url": "https://www.theregister.com/security/2026/10/26/britain-bets-big-on-ai-to-defend-against-the-threats-ai-is-helping-create/5305319"
+      }
+    ],
+    "poll": {
+      "question": "Kritik infratuzilmani agentic AI mustaqil qoʻriqlashi kerakmi?",
+      "options": [
+        "Ha, tezlik uchun agentlar kerak",
+        "Faqat inson nazorati ostida",
+        "Yoʻq, xavf foydadan katta",
+        "Hali erta, avval sinov kerak"
+      ]
+    }
+  },
+  "status": "pending",
+  "approval": false,
+  "file_ids": [
+    "AgACAgIAAxUHauYS4rhHITuWTjNWFiAabQn2liAAAu8caxtcNjFLJ0KiRMzEJWkBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauYS4gqACu8AAVa_dQez8hd3FbCuAALtHGsbXDYxS8TjOHO-hr3bAQADAgADeQADPQQ",
+    "AgACAgIAAxUHauYS4nBDZZmNlUtWPnSH5qgtWvoAAu4caxtcNjFLCF5gPdtXomMBAAMCAAN5AAM9BA",
+    "AgACAgIAAxUHauYS4pZ5hDBVqAAB592YhRZOF9SqAALsHGsbXDYxS5D_apMG9MmzAQADAgADeQADPQQ",
+    "AgACAgIAAxUHauYS4gcX7X8dYRqxSwVxeklhofAAAvAcaxtcNjFLA_273bHBs6UBAAMCAAN5AAM9BA"
+  ],
+  "control_message_id": 117
+}
